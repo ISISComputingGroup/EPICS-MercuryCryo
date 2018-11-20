@@ -1,0 +1,281 @@
+<VI syntaxVersion="11" LVversion="10008000" revision="590" name="Mercury - Cryostat - Front Panel 1.vi">
+<TITLE></TITLE>
+<HELP_PATH></HELP_PATH>
+<HELP_TAG></HELP_TAG>
+<RTM_PATH type="default"></RTM_PATH>
+<DESC></DESC>
+<CONTENT>
+	<GROUPER>
+		<PARTS>
+		</PARTS></GROUPER>
+	<CONTROL ID="80" type="Numeric" name="Temp">
+		<DESC>Most recent temperature reading</DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID="82" order="0" type="Caption"><LABEL><STEXT>Temp</STEXT></LABEL></PART>
+		</PARTS>
+	</CONTROL>
+	<CONTROL ID="80" type="Numeric" name="System TSet Ind">
+		<DESC>Temperature Set Point
+Limits between cold limit and hot limit</DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID="82" order="0" type="Caption"><LABEL><STEXT>System TSet Ind</STEXT></LABEL></PART>
+		</PARTS>
+	</CONTROL>
+	<CONTROL ID="100" type="Type Definition" name="System TSet">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID="8010" order="0" type="Cursor Buttons">
+				<CONTROL ID="80" type="Numeric" name="">
+					<DESC></DESC>
+					<TIP></TIP>
+					<PARTS>
+						<PART ID="82" order="0" type="Caption"><LABEL><STEXT></STEXT></LABEL></PART>
+					</PARTS>
+				</CONTROL>
+			</PART>
+			<PART ID="82" order="0" type="Caption"><LABEL><STEXT>System TSet</STEXT></LABEL></PART>
+		</PARTS>
+	</CONTROL>
+	<CONTROL ID="79" type="Boolean" name="Exit">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID="22" order="0" type="Boolean Text"><MLABEL><STRINGS><STRING>Exit</STRING></STRINGS></MLABEL></PART>
+			<PART ID="82" order="0" type="Caption"><LABEL><STEXT>Exit</STEXT></LABEL></PART>
+		</PARTS>
+	</CONTROL>
+	<CONTROL ID="80" type="Numeric" name="Iterations">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID="82" order="0" type="Caption"><LABEL><STEXT>Iterations</STEXT></LABEL></PART>
+		</PARTS>
+	</CONTROL>
+	<CONTROL ID="94" type="XY Graph" name="Graph">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID="8022" order="0" type="">
+				<CONTROL ID="231" type="Tree" >
+					<DESC></DESC>
+					<TIP></TIP>
+					<PARTS>
+						<GROUPER>
+							<PARTS>
+							</PARTS></GROUPER>
+					</PARTS>
+					<PRIV>
+						<CELL_FONTS>
+							[-2 -2]
+							[-1 -2]
+						</CELL_FONTS>
+						<ROW_HEADER>
+						</ROW_HEADER>
+						<COL_HEADER>
+							<STRING>Cursors:</STRING>
+							<STRING>X</STRING>
+							<STRING>Y</STRING>
+						</COL_HEADER>
+						<STRINGS>
+						</STRINGS>
+					</PRIV>
+				</CONTROL>
+			</PART>
+			<PART ID="82" order="0" type="Caption"><LABEL><STEXT>Graph</STEXT></LABEL></PART>
+		</PARTS>
+		<PRIV>
+			<PLOTS><STRING>Temp</STRING><STRING>TSet</STRING><STRING>Press</STRING><STRING>PSet</STRING></PLOTS>
+			<SCALE_NAMES><STRING>Time</STRING><STRING>Temperature</STRING><STRING>Pressure</STRING></SCALE_NAMES>
+		</PRIV>
+	</CONTROL>
+	<CONTROL ID="79" type="Boolean" name="Clear">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID="22" order="0" type="Boolean Text"><MLABEL><STRINGS><STRING>Clear</STRING></STRINGS></MLABEL></PART>
+			<PART ID="82" order="0" type="Caption"><LABEL><STEXT>Clear</STEXT></LABEL></PART>
+		</PARTS>
+	</CONTROL>
+	<CONTROL ID="79" type="Boolean" name="Activity">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID="82" order="0" type="Caption"><LABEL><STEXT>Activity</STEXT></LABEL></PART>
+		</PARTS>
+	</CONTROL>
+	<CONTROL ID="100" type="Type Definition" name="Logo">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID="8010" order="0" type="Cursor Buttons">
+				<CONTROL ID="87" type="Ring" name="">
+					<DESC></DESC>
+					<TIP></TIP>
+					<PARTS>
+						<PART ID="82" order="0" type="Caption"><LABEL><STEXT></STEXT></LABEL></PART>
+					</PARTS>
+				</CONTROL>
+			</PART>
+			<PART ID="82" order="0" type="Caption"><LABEL><STEXT>Logo</STEXT></LABEL></PART>
+		</PARTS>
+	</CONTROL>
+	<LABEL><STEXT>Mercury - Cryostat</STEXT></LABEL>
+	<CONTROL ID="80" type="Numeric" name="Pressure">
+		<DESC>Most recent temperature reading</DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID="82" order="0" type="Caption"><LABEL><STEXT>Pressure</STEXT></LABEL></PART>
+		</PARTS>
+	</CONTROL>
+	<CONTROL ID="80" type="Numeric" name="PSet Ind">
+		<DESC>Temperature Set Point
+Limits between cold limit and hot limit</DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID="82" order="0" type="Caption"><LABEL><STEXT>PSet Ind</STEXT></LABEL></PART>
+		</PARTS>
+	</CONTROL>
+	<CONTROL ID="100" type="Type Definition" name="PSet">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID="8010" order="0" type="Cursor Buttons">
+				<CONTROL ID="80" type="Numeric" name="">
+					<DESC></DESC>
+					<TIP></TIP>
+					<PARTS>
+						<PART ID="82" order="0" type="Caption"><LABEL><STEXT></STEXT></LABEL></PART>
+					</PARTS>
+				</CONTROL>
+			</PART>
+			<PART ID="82" order="0" type="Caption"><LABEL><STEXT>PSet</STEXT></LABEL></PART>
+		</PARTS>
+	</CONTROL>
+	<CONTROL ID="80" type="Numeric" name="Heater %">
+		<DESC>Most recent temperature reading</DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID="82" order="0" type="Caption"><LABEL><STEXT>Heater %</STEXT></LABEL></PART>
+		</PARTS>
+	</CONTROL>
+	<CONTROL ID="80" type="Numeric" name="NV">
+		<DESC>Most recent temperature reading</DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID="82" order="0" type="Caption"><LABEL><STEXT>NV</STEXT></LABEL></PART>
+		</PARTS>
+	</CONTROL>
+	<CONTROL ID="100" type="Type Definition" name="NV Set">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID="8010" order="0" type="Cursor Buttons">
+				<CONTROL ID="80" type="Numeric" name="">
+					<DESC></DESC>
+					<TIP></TIP>
+					<PARTS>
+						<PART ID="82" order="0" type="Caption"><LABEL><STEXT></STEXT></LABEL></PART>
+					</PARTS>
+				</CONTROL>
+			</PART>
+			<PART ID="82" order="0" type="Caption"><LABEL><STEXT>NV Set</STEXT></LABEL></PART>
+		</PARTS>
+	</CONTROL>
+	<CONTROL ID="79" type="Boolean" name="Pressure Auto">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID="82" order="0" type="Caption"><LABEL><STEXT>Auto</STEXT></LABEL></PART>
+		</PARTS>
+	</CONTROL>
+	<CONTROL ID="79" type="Boolean" name="Heater Auto">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID="82" order="0" type="Caption"><LABEL><STEXT>Auto</STEXT></LABEL></PART>
+		</PARTS>
+	</CONTROL>
+	<CONTROL ID="79" type="Boolean" name="Full Auto">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID="82" order="0" type="Caption"><LABEL><STEXT>Full Auto</STEXT></LABEL></PART>
+		</PARTS>
+	</CONTROL>
+	<CONTROL ID="80" type="Numeric" name="NV Set Ind">
+		<DESC>Temperature Set Point
+Limits between cold limit and hot limit</DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID="82" order="0" type="Caption"><LABEL><STEXT>NV Set Ind</STEXT></LABEL></PART>
+		</PARTS>
+	</CONTROL>
+	<CONTROL ID="80" type="Numeric" name="TSet Ind">
+		<DESC>Temperature Set Point
+Limits between cold limit and hot limit</DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID="82" order="0" type="Caption"><LABEL><STEXT>TSet Ind</STEXT></LABEL></PART>
+		</PARTS>
+	</CONTROL>
+	<CONTROL ID="100" type="Type Definition" name="TSet">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID="8010" order="0" type="Cursor Buttons">
+				<CONTROL ID="80" type="Numeric" name="">
+					<DESC></DESC>
+					<TIP></TIP>
+					<PARTS>
+						<PART ID="82" order="0" type="Caption"><LABEL><STEXT></STEXT></LABEL></PART>
+					</PARTS>
+				</CONTROL>
+			</PART>
+			<PART ID="82" order="0" type="Caption"><LABEL><STEXT>TSet</STEXT></LABEL></PART>
+		</PARTS>
+	</CONTROL>
+	<CONTROL ID="80" type="Numeric" name="Temp 2">
+		<DESC>Most recent temperature reading</DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID="82" order="0" type="Caption"><LABEL><STEXT>Temp 2</STEXT></LABEL></PART>
+		</PARTS>
+	</CONTROL>
+	<CONTROL ID="80" type="Numeric" name="Temp 3">
+		<DESC>Most recent temperature reading</DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID="82" order="0" type="Caption"><LABEL><STEXT>Temp 3</STEXT></LABEL></PART>
+		</PARTS>
+	</CONTROL>
+	<CONTROL ID="80" type="Numeric" name="Heater Voltage">
+		<DESC>Temperature Set Point
+Limits between cold limit and hot limit</DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID="82" order="0" type="Caption"><LABEL><STEXT>V</STEXT></LABEL></PART>
+		</PARTS>
+	</CONTROL>
+	<CONTROL ID="80" type="Numeric" name="Final PSet">
+		<DESC>Temperature Set Point
+Limits between cold limit and hot limit</DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID="82" order="0" type="Caption"><LABEL><STEXT>Final PSet</STEXT></LABEL></PART>
+		</PARTS>
+	</CONTROL>
+	<CONTROL ID="79" type="Boolean" name="Setup">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID="22" order="0" type="Boolean Text"><MLABEL><STRINGS><STRING>Setup</STRING></STRINGS></MLABEL></PART>
+			<PART ID="82" order="0" type="Caption"><LABEL><STEXT>Setup</STEXT></LABEL></PART>
+		</PARTS>
+	</CONTROL>
+</CONTENT>
+</VI>
+
+
